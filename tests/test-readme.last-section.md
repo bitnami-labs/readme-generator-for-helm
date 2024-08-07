@@ -159,6 +159,7 @@ This description starts in a new line instead of the same line of description st
 | `serviceAccount.name`                                 | Name of the created ServiceAccount                                                                                             | `""`         |
 | `inventedArray`                                       | Test parameter to check arrays                                                                                                 | `["a","b"]`  |
 | `arrayModifier`                                       | Test parameter for modifier array                                                                                              | `[]`         |
+| `numberModifier`                                      | Test parameter for modifier number                                                                                             | `0`          |
 | `configuration`                                       | haproxy configuration                                                                                                          | `""`         |
 | `jobs[0].nameOverride`                                | String to partially override jobs.names.fullname                                                                               | `""`         |
 | `jobs[0].fullnameOverride`                            | String to fully override jobs.names.fullname                                                                                   | `""`         |
@@ -175,6 +176,7 @@ This description starts in a new line instead of the same line of description st
 | `nullableNullStringWithValueChange`                   | Nullable null string. We apply string modifier that will change the type and value, but the schema will show `nullable: true`. | `""`         |
 | `nullableNullArray`                                   | Nullable null array. We apply array modifier that will change the type in the schema plus `nullable: true`.                    | `nil`        |
 | `nullableNullString`                                  | Nullable null string. We apply string modifier to avoid infering an object type. The null must be preverved as value.          | `nil`        |
+| `nullableNullNumber`                                  | Nullable null number. We apply number modifier to avoid infering an object type. The null must be preverved as value.          | `nil`        |
 | `nullableNotNull`                                     | Nullable parameter with a non null value                                                                                       | `somestring` |
 | `nullableObject`                                      | Nullable parameter with an object value                                                                                        | `{}`         |
 | `nullableArray`                                       | Nullable parameter with an array value                                                                                         | `[]`         |

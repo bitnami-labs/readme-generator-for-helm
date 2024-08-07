@@ -1,6 +1,6 @@
 {
   "name": "@bitnami/readme-generator-for-helm",
-  "version": "2.6.1",
+  "version": "2.7.0",
   "description": "Autogenerate READMEs tables and OpenAPI schemas for Helm Charts",
   "main": "index.js",
   "scripts": {

@@ -117,6 +117,7 @@ Currently supported modifiers:
 - `[array]` Indicates that the value of the parameter must be set to `[]`.
 - `[object]` Indicates that the value of the parameter must be set to `{}`.
 - `[string]` Indicates that the value of the parameter must be set to `""`.
+- `[number]` Indicates that the value of the parameter must be set to a number (ex. `0`).
 - `[nullable]` Indicates that the parameter value can be set to `null`.
 - `[default: DEFAULT_VALUE]` Sets the default value to `DEFAULT_VALUE`.
 
@@ -141,10 +142,10 @@ Custom configuration snippet:
   ...
     "modifiers": {
     "array": "array",
-    "object": "object"
-    "string": "string"
-    "nullable": "nullable",
-    "number": "number"
+    "object": "object",
+    "string": "string",
+    "number": "number",
+    "nullable": "nullable"
   },
   ...
 }
@@ -169,9 +170,10 @@ The configuration file has the following structure:
   },
   "modifiers": {
     "array": "array",                            <-- Modifier that indicates an array type
-    "object": "object"                           <-- Modifier that indicates an object type
-    "string": "string"                           <-- Modifier that indicates a string type
-    "nullable": "nullable"                       <-- Modifier that indicates a parameter that can be set to null
+    "object": "object",                          <-- Modifier that indicates an object type
+    "string": "string",                          <-- Modifier that indicates a string type
+    "number": "number",                           <-- Modifier that indicates a number type
+    "nullable": "nullable"                      <-- Modifier that indicates a parameter that can be set to null
   },
   "regexp": {
     "paramsSectionTitle": "Parameters"           <-- Title of the parameters section to replace in the README.md

@@ -573,6 +573,11 @@
                 "type": "string"
             }
         },
+        "numberModifier": {
+            "type": "number",
+            "description": "Test parameter for modifier number",
+            "default": 0
+        },
         "configuration": {
             "type": "string",
             "description": "haproxy configuration",
@@ -686,6 +691,12 @@
         "nullableNullString": {
             "type": "string",
             "description": "Nullable null string. We apply string modifier to avoid infering an object type. The null must be preverved as value.",
+            "default": null,
+            "nullable": true
+        },
+        "nullableNullNumber": {
+            "type": "number",
+            "description": "Nullable null number. We apply number modifier to avoid infering an object type. The null must be preverved as value.",
             "default": null,
             "nullable": true
         },

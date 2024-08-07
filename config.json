@@ -14,6 +14,7 @@
     "array": "array",
     "object": "object",
     "string": "string",
+    "number": "number",
     "nullable": "nullable",
     "default": "default"
   },

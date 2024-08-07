@@ -459,6 +459,10 @@ arrayModifier:
   - a
   - b
 
+## Invented parameter to test number modifier
+## @param numberModifier [number] Test parameter for modifier number
+numberModifier: 0
+
 ## @param configuration [string] haproxy configuration
 ##
 configuration: |
@@ -521,6 +525,8 @@ nullableNullStringWithValueChange: null
 nullableNullArray: null
 ## @param nullableNullString [string,nullable] Nullable null string. We apply string modifier to avoid infering an object type. The null must be preverved as value.
 nullableNullString: null
+## @param nullableNullNumber [number,nullable] Nullable null number. We apply number modifier to avoid infering an object type. The null must be preverved as value.
+nullableNullNumber: null
 ## @param nullableNotNull [nullable] Nullable parameter with a non null value
 nullableNotNull: somestring
 ## @param nullableObject [nullable] Nullable parameter with an object value
